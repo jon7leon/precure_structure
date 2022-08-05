@@ -1,0 +1,2 @@
+# precure_front
+ふたりはプリキュア
