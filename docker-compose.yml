@@ -1,0 +1,35 @@
+version: '3'
+env_file: ./.env
+
+services:
+  front:
+    image: front
+    container_name: front
+    hostname: front
+    build: ./infra/docker/node
+    ports:
+      - 3000:3000
+    tty: true
+    volumes:
+      - ./front/:/usr/src/app/
+
+  # これは、white と black で変わる
+  # backend:
+  #   image: '${BACKEND}'
+  #   container_name: '${BACKEND}'
+  #   build: ./infra/docker/'${BACKEND}'
+  #   ports: '${BACKEND_PORT}'
+  #   tty: true
+  #   valumes:
+  #     各自合わせる
+  #     - ./backend/:/var/src/app
+
+  # graphql:
+  #   image: graphql
+  #   container_name: graphql
+  #   # build: ./infra/db/graphql みたいな
+
+  # mongo_db:
+  #   image: mongo_db
+  #   container_name: mongo_db
+  #   # build: ./infra/db/mongo_db/

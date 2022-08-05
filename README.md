@@ -1,4 +1,4 @@
-# precure_front
+# precure_structure
 
 ## インスタっぽいものを作る
 
@@ -7,16 +7,26 @@
 ### フォルダ構成
 
 ```
+├─ backend
+  ... // .gitignore
+├─ front
+  ├─ Next.js // .gitignore
+├─ db
+  ...
 ├─ infra
   ├─ docker
-  ├─ db
-  ├─ go
-  ├─ rust
-├─src
-  ├─ Next.js
+    ├─ go
+    ├─ node
+    ├─ rust
+    ...
 ├─ docker-compose.yml
 └─ README.md
 ```
+
+ansible のイメージ
+/src git clone front
+/infra git clone node
+/infra git clone node
 
 ---
 
