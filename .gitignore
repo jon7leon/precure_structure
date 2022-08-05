@@ -1,1 +1,9 @@
 .env
+./db/.gitkeep
+
+./backend/go/.gitkeep
+./backend/rust/.gitkeep
+
+./infra/docker/go/.gitkeep
+./infra/docker/node/.gitkeep
+./infra/docker/rust/.gitkeep
