@@ -1,4 +1,8 @@
 .env
+
+./front/*
+./backend/*
+
 ./db/.gitkeep
 
 ./backend/go/.gitkeep
